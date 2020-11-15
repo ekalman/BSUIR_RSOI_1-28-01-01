@@ -1,0 +1,127 @@
+html{
+    background-color: black;
+}
+body {
+    background: no-repeat top/100% url("back.jpg");
+}
+
+.article {
+    font-family: Sans-Serif;
+    padding: 30px;
+    width: 70%;
+    background: black;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    opacity: 0.85;
+}
+
+.article__h1 {
+    font-size: 35px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+table{
+    color: white;
+    padding: 30px;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    text-align: left;
+    line-height: 200%;
+    font-size: 17px;
+}
+th{
+    padding: 30px;
+}
+
+.buttons{
+    padding-left: 20%;
+}
+
+.buttons button, .buttons a {
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(Silver), to(#282828));
+    color: white;
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px !important;
+}
+
+/*.article:first-letter{*/
+/*    font-size: 50px;*/
+/*}*/
+
+.main {
+    width: 100%;
+    display: flex;
+}
+
+.article__contact-form {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 16px;
+    margin: 2% 10%;
+    opacity: 1;
+}
+
+.article__contact-textarea {
+    width: 100%;
+    height: 60px;
+}
+
+.article__buttons {
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+}
+
+.article__contact-form__button {
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    margin: 20px;
+    background: black;
+    color: #fff;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.article__contact-form__button:hover {
+    background: red;
+}
+
+.aside {
+    width: 15%;
+    /*background-color: #FFDAB9;*/
+}
+
+.footer {
+    height: 50px;
+    /*background-color: #FFDAB9;*/
+    display: flex;
+}
+
+.footer__h2 {
+    margin: 10px 0 10px 50px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#NEWid {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(184, 33, 204);
+    background: #7FFFD4;
+}
+
+img{
+	opacity: 0;
+	width: 20%;
+	height: 20%;
+}
