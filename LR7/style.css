@@ -1,0 +1,82 @@
+body {
+    background-image: url("img/back.jpg");
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+.nav li a {
+    font-family: 'Pangolin', cursive;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 7px;
+}
+
+.nav:active{
+    background-color: black;
+}
+
+#container {
+    padding-top: 20px;
+    margin-top: 75px;
+    text-align: center;
+}
+
+#button {
+    font-size: 16px;
+    background-color: white;
+    color: black;
+}
+
+
+img {
+    height: 250px;
+}
+
+#par {
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Corbel;
+    color: white;
+    padding: 3%;
+}
+
+#forJSON li, .additional_text{
+    list-style-type: none;
+    font-family: "Brush Script MT";
+    font-size: 24px;
+    color: white;
+}
+.additional_text{
+    padding-top: 10px;
+}
+
+
+.img_inf {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+
+ul.social li {
+    display: inline-block;
+}
+ul.social li a {
+    color: white;
+    padding: 0 5px;
+    font-size: 12px;
+}
+
+#errMsg{
+    color: white;
+    font-size: 20px;
+}
