@@ -1,0 +1,124 @@
+table {
+    border: 1px solid white;
+    background-color: black;
+    border-collapse: collapse;
+}
+
+.fish div img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+}
+
+.fish-1 {
+    left: 0;
+    bottom: 0;
+}
+
+.fish-2 {
+    left: 120px;
+    top: -40px;
+}
+
+.fish-3 {
+    left: 280px;
+    top: -80px;
+}
+
+.fish-4 {
+    position: absolute;
+    width: 220px;
+    height: 200px;
+    left: 600px;
+    top: 50px;
+    z-index: 4;
+}
+
+h2 {
+    position: absolute;
+    top: 370px;
+    left: 330px;
+    width: 100%;
+    color: white;
+}
+
+.phrase {
+    position: absolute;
+    width: 200px;
+    padding: 10px;
+    font-size: 1.2em;
+    word-wrap: break-word;
+    top: 480px;
+    left: 290px;
+    color: white;
+}
+
+@keyframes swim {
+    0% {
+        top: 30px;
+    }
+    50% {
+        opacity: 0.5;
+        top: 500px;
+        left: 0;
+    }
+    99%{
+        transform: rotate(360deg);
+    }
+    100% {
+        top: 30px;
+        right: 0;
+        filter: grayscale(100%);
+    }
+}
+.move {
+    animation: swim 5s alternate-reverse 3;
+}
+
+.back-image {
+    background-image: url("back.jpg") ;
+    background-color: black;
+    background-size: 800px 600px;
+    width: 800px;
+}
+
+.par-1 {
+    top: 50px;
+    left: 590px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    width: 250px;
+    color: greenyellow;
+    font-style: italic;
+    text-shadow: 1px 1px 2px black;
+}
+
+.par-2 {
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    left: 1030px;
+    font-weight: bold;
+    font-size: 35px;
+    width: 250px;
+    color: white;
+    font-variant: small-caps;
+    text-shadow: 1px 1px 2px black;
+}
+
+.par-3 {
+    font-family: "Avenir Next";
+    word-wrap: break-word;
+    text-align: right;
+    position: absolute;
+    top: 110px;
+    left: 1300px;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 29px;
+    width: 250px;
+    color: lightgreen;
+    text-shadow: 1px 1px 2px black;
+}
