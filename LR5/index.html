@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Classes</title>
+</head>
+<body>
+
+
+<section>
+
+    <div class="buttons">
+        <a onclick="show()">Показать список классов</a>
+        <a onclick='max()'>Класс с MAX числом учащихся</a>
+        <a onclick="min()">Класс с MIN числом учащихся</a>
+    </div>
+    <br>
+
+    <!--Таблица с классами -->
+    <table id="table">
+        <caption>Школьные классы</caption>
+        <tr>
+            <th>ID</th>
+            <th>Номер класса</th>
+            <th>Количество учащихся класса</th>
+            <th>Классный руководитель</th>
+            <th>Телефон классного руководителя</th>
+        </tr>
+    </table>
+
+    <!-- Удаление класса -->
+    <br><br>
+    <h1>Выберите ID для удаления записи</h1>
+    <select id="select">
+        <option value=""></option>
+    </select>
+    <div class="buttons">
+        <a onclick="del()">Удалить класс</a>
+    </div>
+    <br><br>
+
+</section>
+
+
+<section>
+    <!-- Форма заполнения -->
+    <form action="" method="POST">
+        <h1>Добавить новый класс</h1><br>
+        <input type="text" id="number" placeholder="Номер класса"><br>
+        <input type="number" id="quantity" placeholder="Количество учащихся класса"><br>
+        <input type="text" id="leader" placeholder="Классный руководитель"><br>
+        <input type="text" id="phone" placeholder="Телефон классного руководителя"><br>
+        <!-- Действия -->
+        <div class="buttons">
+            <a onclick="add()">Добавить класс</a>
+            <button type="reset">Очистить форму</button>
+        </div>
+    </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
