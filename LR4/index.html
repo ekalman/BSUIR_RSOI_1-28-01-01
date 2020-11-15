@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/style.css" type="text/css"/>
+    <title>Space</title>
+</head>
+<body OnSelectStart="event.returnValue=false;">
+<center>
+    <form name="myForm">
+        <input type="text" class="area" id="area-1" placeholder="Первое слово" autofocus>
+        <input type="text" class="area" id="area-2" placeholder="Второе слово" tabindex="0">
+        <input type="text" class="area" id="area-3" placeholder="Третье слово" tabindex="0">
+        <br><br>
+        <label>Шрифт:
+            <select name="textSize">
+                <option style="font-size: 18px">Маленький</option>
+                <option style="font-size: 22px">Средний</option>
+                <option style="font-size: 26px">Большой</option>
+                <option style="font-size: 30px">Огромный</option>
+            </select>
+        </label>
+        <label>Цвет текста:
+            <select name="textColor">
+                <option style="color: deeppink">Розовый</option>
+                <option style="color: yellow">Желтый</option>
+                <option style="color: green">Зеленый</option>
+                <option style="color: blue">Синий</option>
+                <option style="color: black">Черный</option>
+                <option style="color: white">Белый</option>
+            </select>
+        </label><br><br>
+
+        <input type="reset" id="clear" value="Очистить поля" onclick="ChangeFieldWidth();">
+
+        <a href="#openModal"><input type="button" id="result" value="Показать результат"></a>
+        <div id="openModal" class="modalDialog">
+            <div id="back-1">
+                <a href="#close" title="Закрыть" class="close">X</a>
+                <img src="static/result.png">
+                <p id="text-1"></p>
+                <p id="text-2"></p>
+                <p id="text-3"></p>
+                <p id="message"></p>
+            </div>
+        </div>
+
+        <input type="button" id="launch" value="Запустить ракету!">
+        <div id="openModal-2" class="modalDialog-2">
+            <div id="back-2">
+                <a href="#close" title="Закрыть" class="close">X</a>
+                <img id="restricted" src="static/restricted.png">
+                <p>Илон Маск запрещает запуск!</p>
+            </div>
+        </div>
+        <br><br>
+    </form>
+</center>
+<div>
+    <img src="static/image.png">
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
