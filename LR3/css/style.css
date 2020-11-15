@@ -1,0 +1,110 @@
+body {
+    padding: 2em;
+    background-color: black;
+}
+
+header {
+    height: 290px;
+    width: 100%;
+    background: url(../resources/phone.png) no-repeat top;
+    border: 1px solid black;
+}
+
+.footer {
+    height: 220px;
+    width: 100%;
+    background: url(../resources/phone.png) no-repeat bottom;
+    border: 1px solid black;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+
+article {
+    color: white
+}
+
+.main {
+    text-align: left;
+    background: black;
+    opacity: 0.9;
+}
+
+.aside-1 {
+    background: linear-gradient(to right, white, black);
+    opacity: 0.8;
+}
+
+.aside-1 a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.aside-2 {
+    background: linear-gradient(to left, white, black);
+    opacity: 0.8;
+}
+
+@media all and (min-width: 600px) {
+    .aside {
+        flex: 1 0 0;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .main {
+        flex: 3 0px;
+    }
+
+    .aside-1 {
+        order: 1;
+    }
+
+    .main {
+        order: 2;
+    }
+
+    .aside-2 {
+        order: 3;
+    }
+
+    .footer {
+        order: 4;
+    }
+}
+
+p {
+    color: white;
+}
+
+h2 {
+    align: center;
+}
+
+h1 {
+    color: white;
+    align: center;
+}
+
+.table__th {
+    border: 2px solid #fff;
+}
+
+.article__list {
+    margin: 10px;
+    display: flex;
+    border: 1px solid rgb(73, 70, 70);
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phones</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript">
+      jQuery("#slider").slider({
+        min: 0,
+        max: 1000,
+        values: [0, 1000],
+        range: true
+      });
+    </script>
+</head>
+<body>
+<div class="wrapper">
+
+    <!-- Начало обложки -->
+    <header></header>
+
+    <article class="main">
+        <!-- Заголовок -->
+        <h1 align="center">Оставьте свое мнение о выставке смартфонов!</h1>
+        <!-- Форма ввода -->
+        <form name="form" method="get" align="left" action="index-page-two.html">
+            <fieldset>
+                <!-- Легенда формы -->
+                <legend>Информация для заполнения</legend>
+                <br>
+                <label> ФИО
+                    <input class="field" type="text" name="name" id="name" placeholder="Введите Ваши ФИО"
+                           required><br><br>
+                </label>
+                <label> Пол
+                    <input class="field" type="radio" name="gendre" id="gendre" value="male" placeholder="Пол" required>
+                    Мужской
+                    <input class="field" type="radio" name="gendre" id="gendre" value="female" placeholder="Пол"
+                           required> Женский<br><br>
+                </label>
+                <label> Место проведения выставки
+                    <input class="field" type="text" name="place" id="place" placeholder="Место" required><br><br>
+                </label>
+                <label> Время выставки, неделя
+                    <input class="field" type="week" name="week" id="week" required><br><br>
+                </label>
+                <label> Ваше мнение о выставке
+                    <select class="field" name="opinion" id="opinion">
+                        <option>Очень хорошо</option>
+                        <option>Хорошо</option>
+                        <option>Неплохо</option>
+                        <option>Плохо</option>
+                        <option>Очень плохо</option>
+                    </select>
+                </label><br><br>
+                <label> Оцените, посоветуете ли Вы выставку знакомым
+                    <input class="field" type="range" name="advice" id="advice" min="0"
+                           max="100" step="10" value="90" required>
+                    <span id="range-item"> %</span><br><br>
+                </label>
+                <label> Какой цвет смартфона предпочитаете
+                    <input class="field" type="color" name="color" id="color" required><br><br>
+                </label>
+                <input type="submit" name="submit" id="submit">
+                <input type="reset" name="reset" id="reset">
+            </fieldset>
+        </form>
+    </article>
+
+    <aside class="aside aside-1">
+        <a href="index.html"><p>Оставить мнение</p></a>
+        <a href="index-page-two.html"><p>Результаты</p></a>
+    </aside>
+
+    <aside class="aside aside-2"></aside>
+
+    <!-- Конец обложки -->
+    <footer class="footer"></footer>
+</div>
+<script src="../resources/script.js"></script>
+</body>
+</html>
